@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>David's Lemonade</title>
+    <link rel="stylesheet" href="CSS/lemonade.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="menuBurger">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li><a href="#Presentation">Qui ?</a></li>
+                <li><a href="#Arguments">Quoi ?</a></li>
+                <li><a href="#Carte">Où ?</a></li>
+                <li><a href="#Réseau">Contact</a></li>
+                <li><a href="https://combava.com/" target="_blank">Combava</a></li>
+            </ul>
+        </nav>
+        <img src="Images/logoDavids.png" alt="logo">
+        <a href="#Formulaire" class="inscription_button">Inscription</a>
+    </header>
+
+    <main>
+        <!--Presentation-->
+        <section id="Presentation">
+            <div class="container">
+                <h1>Qui sommes nous?</h1>
+                <p>David's Lemonade est de retour et c'est grâce à nous ! L'association <a href="https://combava.com/">Combava</a>, regroupant des producteurs indépendants d'agrumes du sud de la France, vous propose de redécouvrir le plaisir d'une bonne limonade. Nous serons là pour vous accueillir, alors devenez VIP pour l'une de nos dégustations, <a href="#Formulaire">rejoignez-nous</a> !</p>
+            </div>
+
+        </section>
+
+        <!--Arguments-->
+        <input type="checkbox" class="trigger" id="checkbox" />
+        <section id="Arguments">
+            <h1>Que faisons nous?</h1>
+            <article id="article1">
+                <img src="Images/degustation.jpg" alt="degustation">
+                <div class="text">
+                    <h2>Notre concept</h2>
+                    <p>Grâce aux partenariats avec des magasins de la France entière, venez nous rencontrer à nos stands David's Lemonade. Vous, VIP en devenir, pourrez y goûter nos limonades à la façon des plus grandes dégustations de vins.</p>
+                </div>
+            </article>
+
+            <article id="article2">
+                <img src="Images/limonade.jpeg" alt="limonade">
+                <div class="text">
+                    <h2>Notre limonade</h2>
+                    <p>5 cents ? C'est le prix du fait mains chez David's Lemonade by Combava ! C'est aussi le prix de la qualité : des ingrédients sains, frais, 100% bio, et assemblés avec amour selon la recette authentique.</p>
+                </div>
+            </article>
+
+            <article id="article3">
+                <img src="Images/producteurs.jpg" alt="producteurs">
+                <div class="text">
+                    <h2>Nos producteurs</h2>
+                    <p>Nos producteurs eh bien.. c'est nous ! Originaires du sud de la France, pas besoin de chercher plus loin ! Nous vous proposons des produits bios et locaux de la meilleure qualité pour vous proposer une boisson saine à la hauteur de vos attentes.</p>
+                </div>
+            </article>
+        </section>
+        <label for="checkbox" class="bouton"></label>
+
+  			<!--Carte-->
+  			<section id="Carte">
+				<h1>Où sommes nous?</h1>
+  				<iframe title="Où sommes-nous ?" src="https://www.google.com/maps/d/u/0/embed?mid=1txqcWcXrAae74z98buzqRV0TQANj_IE7" width="640" height="480"></iframe>
+  			</section>
+
+        <!--Formulaire-->
+        <section id="Formulaire">
+            <form>
+                <h1> Formulaire </h1>
+                <input id="nom" type="text" name="nom" placeholder="Nom" required />
+                <input id="prenom" type="text" name="prénom" placeholder="Prénom" required />
+                <input id="mail" type="email" name="email" placeholder="Email" required />
+                <input id="tel" type="tel" name="telephone" placeholder="Numéro téléphone" maxlength="10" required />
+                <select id="ville" name="ville">
+                    <option value="" selected disabled>-- Choisissez un évènement --</option>
+                    <option value="Grand Poitiers">Grand Poitiers</option>
+                    <option value="Civray-de-Touraine">Civray-de-Touraine</option>
+                    <option value="La Rochelle">La Rochelle</option>
+                    <option value="Pompignac">Pompignac</option>
+                    <option value="Arpajon-sur-Cère">Arpajon-sur-Cère</option>
+                    <option value="Maringues">Maringues</option>
+                    <option value="Biars-sur-Cère">Biars-sur-Cère</option>
+                    <option value="Juvignac">Juvignac</option>
+                    <option value="Le Beausset">Le Beausset</option>
+                    <option value="Besançon">Besançon</option>
+                    <option value="Wintzenheim">Wintzenheim</option>
+                    <option value="Charleville-Mézières">Charleville-Mézières</option>
+                    <option value="Amiens">Amiens</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Auxerre">Auxerre</option>
+                </select><br />
+                <input id="newsletter" type="checkbox" name="info supplementaire" /><label> Je souhaite être informé(e) des nouveautés et prochains évènements.</label><br />
+                <input id="confidentialite" type="checkbox" name="info supplementaire" required /><label> J'ai lu et j'accepte les règles de confidentialité.</label><br />
+                <input id="button" type="submit" value="Envoyer">
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <!--Réseaux sociaux-->
+        <section id="Réseau">
+            <a class="lien-facebook" href=https://www.facebook.com><img src="Images/icon_facebook.png" alt="facebook" id="icon_facebook"></a>
+            <a class="lien-instagram" href=https://www.instagram.com><img src="Images/icon_instagram.png" alt="instagram" id="icon_instagram"></a>
+            <a class="lien-twitter" href=https://www.twitter.com><img src="Images/icon_twitter.png" alt="twitter" id="icon_twitter"></a>
+        </section>
+        <p class="copyright">© 2020 Combava. Tout droits réservés.</p>
+        <a href="">Mentions Légales</a>
+        <a href="">Confidentialité</a>
+    </footer>
+</body>
+
+</html>
